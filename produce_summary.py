@@ -1,3 +1,5 @@
+
+
 print("Day 1")
 the_file = open("um-deliveries-day-1.txt")
 for line in the_file:
@@ -5,8 +7,8 @@ for line in the_file:
     words = line.split('|')
 
     melon = words[0]
-    count = words[0]
-    amount = words[0]
+    count = words[-2]
+    amount = words[-1]
 
     print(f"Delivered {count} {melon}s for total of ${amount}")
 the_file.close()
@@ -19,8 +21,8 @@ for line in the_file:
     words = line.split('|')
 
     melon = words[0]
-    count = words[0]
-    amount = words[0]
+    count = words[-2]
+    amount = words[-1]
 
     print(f"Delivered {count} {melon}s for total of ${amount}")
 the_file.close()
@@ -33,8 +35,8 @@ for line in the_file:
     words = line.split('|')
 
     melon = words[0]
-    count = words[0]
-    amount = words[0]
+    count = words[-2]
+    amount = words[-1]
 
     print(f"Delivered {count} {melon}s for total of ${amount}")
 the_file.close()
